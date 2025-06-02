@@ -1,0 +1,26 @@
+/* style.css */
+body {
+    margin: 0;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#map-container {
+    display: grid;
+    grid-template-columns: repeat(30, 20px);
+    /* 30 tiles wide */
+    grid-template-rows: repeat(20, 20px);
+    /* 20 tiles tall */
+    gap: 2px;
+}
+
+.tile {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
